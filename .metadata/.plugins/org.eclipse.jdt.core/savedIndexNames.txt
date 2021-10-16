@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+E:\code\dieuthi\.metadata\.plugins\org.eclipse.jdt.core
+1210471822.index
+2380175872.index
+1059153176.index
+2441938283.index
+3594698797.index
+2661530648.index

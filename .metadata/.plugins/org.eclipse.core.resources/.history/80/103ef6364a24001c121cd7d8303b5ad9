@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float a, b, c;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Nhap a: ");
+		a = sc.nextFloat();
+
+		System.out.print("Nhap b: ");
+		b = sc.nextFloat();
+
+		System.out.print("Nhap c: ");
+		c = sc.nextFloat();
+
+//		Xet tam giac
+		boolean isTriangle = false;
+		boolean isSquareTriangle = false;
+		if (a < b + c && b < a + c && c < a + b) {
+			isTriangle = true;
+			float max = Math.max(Math.max(a, b), c);
+
+			float a2 = (float) Math.pow(a, 2);
+			float b2 = (float) Math.pow(b, 2);
+			float c2 = (float) Math.pow(c, 2);
+			if (max == a) {
+				if (a2 == b2 + c2) {
+					isSquareTriangle = true;
+				}
+			} else if (max == b) {
+
+				if (b2 == a2 + c2) {
+					isSquareTriangle = true;
+				}
+			} else {
+				if (c2 == a2 + b2) {
+					isSquareTriangle = true;
+				}
+
+			}
+		}
+
+		if (isSquareTriangle) {
+			System.out.println("Day la tam giac vuong");
+		} else if (isTriangle) {
+			System.out.println("Day la tam giac");
+		} else {
+			System.out.println("Day khong phai la mot tam giac");
+		}
+
+	}
+
+}

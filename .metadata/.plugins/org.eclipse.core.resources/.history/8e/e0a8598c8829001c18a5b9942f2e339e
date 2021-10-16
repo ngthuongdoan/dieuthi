@@ -1,0 +1,14 @@
+package Phan1;
+
+import java.util.Scanner;
+
+public class Bai5 {
+	public static void main(String[] args) {
+		String mssv = new String();
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Nhap MSSV: ");
+		mssv = scan.nextLine();
+		boolean isValid = true;
+		if(mssv.charAt(0)!='B') isValid=false;
+	}
+}

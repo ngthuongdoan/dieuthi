@@ -1,0 +1,29 @@
+package Phan1;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Bai5 {
+	public static void main(String[] args) {
+		String mssv = new String();
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Nhap MSSV: ");
+		mssv = scan.nextLine();
+		boolean isValid = true;
+
+		if (mssv.length() != 9)
+			isValid = false;
+		if (mssv.charAt(0) != 'B')
+			isValid = false;
+
+		for (String character : mssv) {
+			
+		}
+
+		if (isValid) {
+			System.out.println("Hop le");
+		} else {
+			System.out.println("Khong hop le");
+		}
+	}
+}

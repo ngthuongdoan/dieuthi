@@ -1,0 +1,24 @@
+package Phan1;
+
+import java.util.Scanner;
+
+public class Bai2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+//		if (a == 0) {
+//			System.out.println("Không");
+//		} else if (a == 1) {
+//			System.out.println("Một");
+//		}
+		
+		switch(a) {
+		case 1:
+			System.out.println("Một");
+			break;
+		}
+	}
+
+}

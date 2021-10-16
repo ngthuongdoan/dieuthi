@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float a, b, c;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Nhap a: ");
+		a = sc.nextFloat();
+
+		System.out.print("Nhap b: ");
+		b = sc.nextFloat();
+
+		System.out.print("Nhap c: ");
+		c = sc.nextFloat();
+
+//		Xet tam giac
+
+		boolean isTriangle = false;
+		boolean isSquareTriangle = false;
+		if (a < b + c && b < a + c && c < a + b) {
+			isTriangle = true;
+			float max = Math.max(Math.max(a, b), c);
+
+			if (max == a) {
+				if(Math.pow(a, 2)==Math.pow(b, 2)+Math.pow(c, 2)) {
+					isSquareTriangle =true
+				}
+			} else if (max == b) {
+			} else {
+			}
+		} else {
+			isTriangle = false;
+		}
+
+	}
+
+}
